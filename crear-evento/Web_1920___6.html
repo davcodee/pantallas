@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>crear-evento</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Web 1920 – 6;
+		--web-view-id: Web_1920___6;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Web_1920___6;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	#Web_1920___6 {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1920px;
+		height: 1964px;
+		background-color: rgba(244,244,244,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		--web-view-name: Web 1920 – 6;
+		--web-view-id: Web_1920___6;
+		--web-enable-deep-linking: true;
+	}
+	#Rect_ngulo_13 {
+		filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.161));
+	}
+	.Rect_ngulo_13 {
+		position: absolute;
+		overflow: visible;
+		width: 1741px;
+		height: 1473px;
+		left: 100px;
+		top: 234px;
+	}
+	#Crear_evento {
+		position: absolute;
+		left: 364px;
+		top: 373px;
+		overflow: visible;
+		width: 377px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 60px;
+		color: rgba(17,21,41,1);
+	}
+	.Rect_ngulo_14 {
+		position: absolute;
+		overflow: visible;
+		width: 1160px;
+		height: 88px;
+		left: 164px;
+		top: 552px;
+	}
+	.Rect_ngulo_15 {
+		position: absolute;
+		overflow: visible;
+		width: 1160px;
+		height: 88px;
+		left: 164px;
+		top: 688px;
+	}
+	.Rect_ngulo_16 {
+		position: absolute;
+		overflow: visible;
+		width: 280px;
+		height: 88px;
+		left: 172px;
+		top: 824px;
+	}
+	.Rect_ngulo_26 {
+		position: absolute;
+		overflow: visible;
+		width: 280px;
+		height: 88px;
+		left: 564px;
+		top: 824px;
+	}
+	.Rect_ngulo_27 {
+		position: absolute;
+		overflow: visible;
+		width: 280px;
+		height: 88px;
+		left: 956px;
+		top: 824px;
+	}
+	.Rect_ngulo_47 {
+		position: absolute;
+		overflow: visible;
+		width: 280px;
+		height: 88px;
+		left: 1324px;
+		top: 824px;
+	}
+	.Rect_ngulo_17 {
+		position: absolute;
+		overflow: visible;
+		width: 744px;
+		height: 296px;
+		left: 164px;
+		top: 960px;
+	}
+	.Rect_ngulo_18 {
+		position: absolute;
+		overflow: visible;
+		width: 600px;
+		height: 160px;
+		left: 172px;
+		top: 1280px;
+	}
+	#T_tulo_del_evento {
+		position: absolute;
+		left: 196px;
+		top: 567px;
+		overflow: visible;
+		width: 332px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(17,21,41,1);
+	}
+	#Lugar {
+		position: absolute;
+		left: 196px;
+		top: 703px;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(17,21,41,1);
+	}
+	#Fecha {
+		position: absolute;
+		left: 196px;
+		top: 841.5px;
+		overflow: visible;
+		width: 120px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(65,68,79,1);
+	}
+	#Inicia {
+		position: absolute;
+		left: 601px;
+		top: 843.5px;
+		overflow: visible;
+		width: 108px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(17,21,41,1);
+	}
+	#Fecha_A9_Text_6 {
+		position: absolute;
+		left: 1033px;
+		top: 843.5px;
+		overflow: visible;
+		width: 120px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(65,68,79,1);
+	}
+	#Termina {
+		position: absolute;
+		left: 1383px;
+		top: 848.5px;
+		overflow: visible;
+		width: 164px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(65,68,79,1);
+	}
+	#Arrastra_la_imagen {
+		position: absolute;
+		left: 339px;
+		top: 1128px;
+		overflow: visible;
+		width: 366px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(17,21,41,1);
+	}
+	#Descripci_n_de_evento {
+		position: absolute;
+		left: 213px;
+		top: 1299px;
+		overflow: visible;
+		width: 442px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(65,68,79,1);
+	}
+	#Rect_ngulo_21 {
+		filter: drop-shadow(4px 3px 7px rgba(0, 0, 0, 0.161));
+	}
+	.Rect_ngulo_21 {
+		position: absolute;
+		overflow: visible;
+		width: 377px;
+		height: 130px;
+		left: 782px;
+		top: 1524px;
+	}
+	#Rect_ngulo_28 {
+		filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.161));
+	}
+	.Rect_ngulo_28 {
+		position: absolute;
+		overflow: visible;
+		width: 357px;
+		height: 84px;
+		left: 1092px;
+		top: 1048px;
+	}
+	#Crear_evento_A9_Text_10 {
+		position: absolute;
+		left: 835px;
+		top: 1555px;
+		overflow: visible;
+		width: 252px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(65,68,79,1);
+	}
+	#Selecciona_la_imagen {
+		position: absolute;
+		left: 1106px;
+		top: 1066px;
+		overflow: visible;
+		width: 318px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(43,53,103,1);
+	}
+	.photo_camera {
+		position: absolute;
+		overflow: visible;
+		width: 104px;
+		height: 104px;
+		left: 460px;
+		top: 1024px;
+	}
+	.event {
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 120px;
+		left: 212px;
+		top: 344px;
+	}
+	.Rect_ngulo_46 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 169px;
+		left: 0px;
+		top: 0px;
+	}
+	#Conecta_UNAM {
+		position: absolute;
+		left: 83px;
+		top: 60.5px;
+		overflow: visible;
+		width: 305px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Explorar_ {
+		position: absolute;
+		left: 1217px;
+		top: 61px;
+		overflow: visible;
+		width: 178px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Crear_evento_A9_Text_14 {
+		position: absolute;
+		left: 936px;
+		top: 61px;
+		overflow: visible;
+		width: 252px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#Notificaciones {
+		position: absolute;
+		left: 1480px;
+		top: 61px;
+		overflow: visible;
+		width: 283px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	.face {
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		height: 80px;
+		left: 1792px;
+		top: 45px;
+	}
+	.Rect_ngulo_48 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 213px;
+		left: 0px;
+		top: 1751px;
+	}
+	.unam_firma_blanco {
+		position: absolute;
+		overflow: visible;
+		width: 154px;
+		height: 120px;
+		left: 883px;
+		top: 1798px;
+	}
+</style>
+</head>
+<body>
+<div id="Web_1920___6">
+	<svg class="Rect_ngulo_13">
+		<rect fill="rgba(255,255,255,1)" id="Rect_ngulo_13" rx="0" ry="0" x="0" y="0" width="1720" height="1452">
+		</rect>
+	</svg>
+	<div id="Crear_evento">
+		<span>Crear evento</span>
+	</div>
+	<svg class="Rect_ngulo_14">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_14" rx="0" ry="0" x="0" y="0" width="1160" height="88">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_15">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_15" rx="0" ry="0" x="0" y="0" width="1160" height="88">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_16">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_16" rx="0" ry="0" x="0" y="0" width="280" height="88">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_26">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_26" rx="0" ry="0" x="0" y="0" width="280" height="88">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_27">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_27" rx="0" ry="0" x="0" y="0" width="280" height="88">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_47">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_47" rx="0" ry="0" x="0" y="0" width="280" height="88">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_17">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_17" rx="0" ry="0" x="0" y="0" width="744" height="296">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_18">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_18" rx="0" ry="0" x="0" y="0" width="600" height="160">
+		</rect>
+	</svg>
+	<div id="T_tulo_del_evento">
+		<span>Título del evento</span>
+	</div>
+	<div id="Lugar">
+		<span>Lugar</span>
+	</div>
+	<div id="Fecha">
+		<span>Fecha</span>
+	</div>
+	<div id="Inicia">
+		<span>Inicia</span>
+	</div>
+	<div id="Fecha_A9_Text_6">
+		<span>Fecha</span>
+	</div>
+	<div id="Termina">
+		<span>Termina</span>
+	</div>
+	<div id="Arrastra_la_imagen">
+		<span>Arrastra la imagen</span>
+	</div>
+	<div id="Descripci_n_de_evento">
+		<span>Descripción de evento</span>
+	</div>
+	<svg class="Rect_ngulo_21">
+		<rect fill="rgba(235,196,74,1)" id="Rect_ngulo_21" rx="23" ry="23" x="0" y="0" width="356" height="109">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_28">
+		<rect fill="rgba(235,196,74,1)" id="Rect_ngulo_28" rx="23" ry="23" x="0" y="0" width="345" height="72">
+		</rect>
+	</svg>
+	<div id="Crear_evento_A9_Text_10">
+		<span>Crear evento</span>
+	</div>
+	<div id="Selecciona_la_imagen">
+		<span>Selecciona la imagen</span>
+	</div>
+	<svg class="photo_camera">
+		<pattern elementId="photo_camera_A9_Rectangle_13" id="photo_camera_A9_Rectangle_13_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="photo_camera_A9_Rectangle_13_pattern.png" xlink:href="photo_camera_A9_Rectangle_13_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#photo_camera_A9_Rectangle_13_pattern)" id="photo_camera" rx="0" ry="0" x="0" y="0" width="104" height="104">
+		</rect>
+	</svg>
+	<svg class="event">
+		<pattern elementId="event_A9_Rectangle_15" id="event_A9_Rectangle_15_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="event_A9_Rectangle_15_pattern.png" xlink:href="event_A9_Rectangle_15_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#event_A9_Rectangle_15_pattern)" id="event" rx="0" ry="0" x="0" y="0" width="120" height="120">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_46">
+		<rect fill="rgba(43,53,103,1)" id="Rect_ngulo_46" rx="0" ry="0" x="0" y="0" width="1920" height="169">
+		</rect>
+	</svg>
+	<div id="Conecta_UNAM">
+		<span>Conecta UNAM</span>
+	</div>
+	<div id="Explorar_">
+		<span>Explorar </span>
+	</div>
+	<div id="Crear_evento_A9_Text_14">
+		<span>Crear evento</span>
+	</div>
+	<div id="Notificaciones">
+		<span>Notificaciones</span>
+	</div>
+	<svg class="face">
+		<pattern elementId="face_A9_Rectangle_18" id="face_A9_Rectangle_18_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="face_A9_Rectangle_18_pattern.png" xlink:href="face_A9_Rectangle_18_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#face_A9_Rectangle_18_pattern)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="face" rx="40" ry="40" x="0" y="0" width="80" height="80">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_48">
+		<rect fill="rgba(43,53,103,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_48" rx="0" ry="0" x="0" y="0" width="1920" height="213">
+		</rect>
+	</svg>
+	<svg class="unam_firma_blanco">
+		<pattern elementId="unam_firma_blanco_A9_Rectangle_21" id="unam_firma_blanco_A9_Rectangle_21_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="unam_firma_blanco_A9_Rectangle_21_pattern.png" xlink:href="unam_firma_blanco_A9_Rectangle_21_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#unam_firma_blanco_A9_Rectangle_21_pattern)" id="unam_firma_blanco" rx="0" ry="0" x="0" y="0" width="154" height="120">
+		</rect>
+	</svg>
+</div>
+</body>
+</html>
